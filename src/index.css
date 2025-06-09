@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-fazag-green-500 text-white hover:bg-fazag-green-600 dark:bg-fazag-green-400 dark:text-fazag-dark-blue dark:hover:bg-fazag-green-500;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-fazag-green-500 text-fazag-green-500 hover:bg-fazag-green-500 hover:text-white dark:border-fazag-green-400 dark:text-fazag-green-400 dark:hover:bg-fazag-green-400 dark:hover:text-fazag-dark-blue;
+  }
+}
