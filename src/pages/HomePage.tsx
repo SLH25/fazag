@@ -216,7 +216,7 @@ const HomePage: React.FC = () => {
                   className="flex transition-transform duration-500 ease-out"
                   style={{ transform: `translateX(-${currentSlide * 100}%)` }}
                 >
-                  {images.map((image, index) => (
+                  {images.map((image) => (
                     <div
                       key={image.alt}
                       className="w-full flex-shrink-0"
