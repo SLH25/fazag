@@ -89,7 +89,7 @@ const AboutPage: React.FC = () => {
             <ScrollReveal delay={300}>
               <div className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg">
                 <div className="grid grid-cols-2 gap-6">
-                  {stats.map((stat, index) => (
+                  {stats.map((stat) => (
                     <div key={stat.label} className="text-center">
                       <div className="text-2xl md:text-3xl font-bold text-fazag-green-500 dark:text-fazag-green-400 mb-2">
                         {stat.number}
